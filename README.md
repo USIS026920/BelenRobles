@@ -5,3 +5,5 @@
 - Redes.
 - Bases de datos.
 - Facilidad de análisis.
+
+![Gif #2](https://github.com/USIS026920/BelenRobles/assets/87837202/fa1f6036-9428-4d52-ab77-4939010485d6)
