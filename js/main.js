@@ -130,8 +130,28 @@
         }
         if (index == 0) {
           document.getElementById('cv').src = 'docs/cv.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=100';
+          document.getElementById('alcir-link').href = './docs/Alcir.pdf';
+          document.getElementById('oscar-link').href = './docs/Oscar.pdf';
+          document.getElementById('cordero-link').href = './docs/Cordero.pdf';
+          document.getElementById('marvin-link').href = './docs/Marvin.pdf';
+          document.getElementById('yancy-link').href = './docs/Yancy.pdf';
+          document.getElementById('alcir-img').src = './img/Alcir.jpg';
+          document.getElementById('oscar-img').src = './img/Oscar.jpg';
+          document.getElementById('cordero-img').src = './img/Cordero.jpg';
+          document.getElementById('marvin-img').src = './img/Marvin.jpg';
+          document.getElementById('yancy-img').src = './img/Yancy.jpg';
         } else if (index == 1) {
           document.getElementById('cv').src = 'docs/cv.en.pdf#toolbar=0&navpanes=0&scrollbar=0&zoom=100';
+          document.getElementById('alcir-link').href = './docs/Alcir.en.pdf';
+          document.getElementById('oscar-link').href = './docs/Oscar.en.pdf';
+          document.getElementById('cordero-link').href = './docs/Cordero.en.pdf';
+          document.getElementById('marvin-link').href = './docs/Marvin.en.pdf';
+          document.getElementById('yancy-link').href = './docs/Yancy.en.pdf';
+          document.getElementById('alcir-img').src = './img/Alcir.en.jpg';
+          document.getElementById('oscar-img').src = './img/Oscar.en.jpg';
+          document.getElementById('cordero-img').src = './img/Cordero.en.jpg';
+          document.getElementById('marvin-img').src = './img/Marvin.en.jpg';
+          document.getElementById('yancy-img').src = './img/Yancy.en.jpg';
         }
         changeIndex(el, index);
         loadLang(langs[index]);
@@ -148,8 +168,10 @@
         let json;
         if (lang === 'es') {
           json = es;
+          document.getElementById('translate').innerText = "Español";
         } else if (lang === 'en') {
           json = en;
+          document.getElementById('translate').innerText = "English";
         }
 
         Object.keys(json).forEach(function(key) {
